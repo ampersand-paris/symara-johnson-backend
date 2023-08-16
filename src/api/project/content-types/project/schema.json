@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Year": {
+      "type": "string"
+    },
+    "Premiere_Location": {
+      "type": "string"
+    },
+    "Video_Link": {
+      "type": "string"
+    },
+    "Project_Image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Credits": {
+      "type": "json"
+    },
+    "press": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::press.press",
+      "mappedBy": "project"
+    },
+    "Presentation_Locations": {
+      "type": "richtext"
+    }
+  }
+}

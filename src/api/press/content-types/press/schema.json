@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "presses",
+  "info": {
+    "singularName": "press",
+    "pluralName": "presses",
+    "displayName": "Press"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Year": {
+      "type": "string"
+    },
+    "Publication": {
+      "type": "string"
+    },
+    "Author": {
+      "type": "string"
+    },
+    "Quote": {
+      "type": "text"
+    },
+    "Link": {
+      "type": "string"
+    },
+    "project": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::project.project",
+      "inversedBy": "press"
+    }
+  }
+}
