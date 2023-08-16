@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_quotes",
+  "info": {
+    "singularName": "contact-quote",
+    "pluralName": "contact-quotes",
+    "displayName": "Contact_Quote"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Quote": {
+      "type": "string"
+    }
+  }
+}
